@@ -4,5 +4,5 @@ if (/^-?\d+$/.test(arg)) {
   const number = parseInt(arg, 10);
   console.log(`My number: ${number}`);
 } else {
-  console.log("Not a number");
+  console.log('Not a number');
 }
