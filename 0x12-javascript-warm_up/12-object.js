@@ -1,5 +1,4 @@
 #!/usr/bin/node
-
 function updateArgs(args) {
   const nums = args.map(Number);
   const index = nums.indexOf(12);

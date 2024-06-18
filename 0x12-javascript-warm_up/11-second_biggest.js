@@ -1,5 +1,4 @@
 #!/usr/bin/node
-
 function secondBiggest(args) {
   const nums = args.map(Number);
   if (nums.length === 0) return 0;
