@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/node
 const args = process.argv.slice(2).map(Number);
 const secondBiggest = (arr) => {
   if (arr.length <= 1) return 0;
