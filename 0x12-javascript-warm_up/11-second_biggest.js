@@ -1,9 +1,17 @@
 #!/usr/bin/node
-function secondBiggest(args) {
-  const nums = args.map(Number);
-  if (nums.length === 0) return 0;
-  if (nums.length === 1) return 0;
-  const max = Math.max(...nums);
-  const secondMax = Math.max(...nums.filter(n => n < max));
+const args = process.argv.slice(2).map(Number);
+const secondBiggest = (arr) => {
+  if (arr.length <= 1) return 0;
+  let max = -Infinity, secondMax = -Infinity;
+  for (const num of arr) {
+    if (num > max) {
+      secondMax = max;
+      max = num;
+    } else if (num > secondMax && num < max) {
+      secondMax = num;
+    }
+  }
   return secondMax;
-}
+};
+console.log(secondBiggest(args));
+
