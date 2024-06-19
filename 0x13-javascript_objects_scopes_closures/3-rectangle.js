@@ -9,7 +9,7 @@ class Rectangle {
       this.height = undefined;
     }
     }
-  print() {
+  print () {
     if (this.width !== undefined && this.height !== undefined) {
       for (let i = 0; i < this.height; i++) {
         console.log('X'.repeat(this.width));
