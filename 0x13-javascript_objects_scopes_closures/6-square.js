@@ -5,8 +5,12 @@ class Square extends Square5 {
     if (c === undefined) {
       c = 'X';
     }
-    for (let i = 0; i < this.height; i++) {
-      console.log(c.repeat(this.width));
+    for (let row = 0; row < this.height; row++) {
+      let toPrint = '';
+      for (let column = 0; column < this.width; column++) {
+        toPrint += 'X';
+      }
+      console.log(toPrint);
     }
   }
 }
