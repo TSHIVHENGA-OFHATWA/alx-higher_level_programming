@@ -1,6 +1,6 @@
 #!/usr/bin/node
 class Rectangle {
-  constructoar (w, h) {
+  constructor (w, h) {
     if (Number.isInteger(w) && w > 0 && Number.isInteger(h) && h > 0) {
       this.width = w;
       this.height = h;
@@ -29,3 +29,4 @@ class Rectangle {
     this.height *= 2;
   }
 }
+module.exports = Rectangle;
