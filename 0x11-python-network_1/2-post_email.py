@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Script that sends a POST request to a URL with an email 
+"""Script that sends a POST request to a URL with an email
 as a parameter and displays the response body.
 """
 import urllib.parse
