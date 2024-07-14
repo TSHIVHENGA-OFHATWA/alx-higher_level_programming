@@ -2,6 +2,9 @@
 """Script that sends a POST request to a URL with an email
 as a parameter and displays the response body.
 """
+import urllib.parse
+import urllib.request
+import sys
 
 
 def send_post_request(url, email):
