@@ -1,6 +1,9 @@
 #The test for add integers
 
+>>> import sys
+>>> sys.path.append('..')
 >>> from add_integer import add_integer
+
 
 # Regular addition of integers
 >>> add_integer(1, 2)
